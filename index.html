@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<html lang="en">
 	<head>
-		<title>Aerial by Suraj Rimal</title>
+		<title>Website by Suraj Rimal</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -35,12 +30,16 @@
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy;Designed by: <a href="https://surajrimal.com">Suraj Rimal</a></span>
+						<span class="copyright">&copy; <span id="current-year"></span> Designed by: <a href="https://surajrimal.com">Suraj Rimal</a></span>
 					</footer>
 
 			</div>
 		</div>
 		<script>
+			// Set the current year dynamically
+			document.getElementById('current-year').textContent = new Date().getFullYear();
+			
+			// Other JS functionality
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
